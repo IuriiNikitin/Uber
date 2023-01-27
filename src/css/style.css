@@ -36,12 +36,19 @@ nav {
 
 .subheader {
     height: 85px;
-    padding: 15px 0;
     background: rgba(0, 0, 0, .6);
 }
 
-.subheader_official {
+.subheader .subheader_logo {
+    display: block;
+    max-width: 100%;
+    margin-top: 16px;
+}
+
+.subheader .subheader_official {
+    opacity: 0.5;
     margin-top: 6px;
+    line-height: 13px;
     font-style: normal;
     font-weight: 100;
     font-size: 13px;
@@ -49,6 +56,8 @@ nav {
 }
 
 .subheader_call {
+    margin-top: 23px;
+    line-height: 12px;
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
@@ -57,12 +66,16 @@ nav {
 }
 
 .subheader_phone {
+    margin-top: 8px;
+    line-height: 12px;
+    display: block;
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
     text-transform: uppercase;
     color: #FFFFFF;
     text-decoration: none;
+    text-align: right;
 }
 
 .subheader_phone:hover {
@@ -70,7 +83,8 @@ nav {
     text-decoration: underline;
 }
 
-.subheader_btn {
+.subheader .subheader_btn {
+    margin-top: 19px;
     width: 172px;
     height: 46px;
     background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
@@ -80,6 +94,59 @@ nav {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+}
+
+.promo {
+    height: 800px;
+    padding: 143px 0 186px 0;
+    background:url("../img/bg/uber_bg.png") center center/cover no-repeat;
+}
+
+.promo .promo_header {
+    margin: 0;
+    line-height: 50px;
+    font-weight: 900;
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.promo .promo_subheader {
+    margin: 0;
+    margin-top: 14px;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.promo .promo_descr {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.promo .promo_btn {
+    margin: 0 auto;
+    margin-top: 115px;
+    display:block;
+    width: 259px;
+    height: 63px;
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    border: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);

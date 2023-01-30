@@ -26,16 +26,23 @@ nav {
     text-decoration: none;
 }
 
-.menu .menu_item {
+/* .menu .menu_item {
     border-right: 2px dotted black;
-    /* padding-right: 28px; */
+    padding-right: 28px;
     padding-right: 2vw;
 }
 
 .menu .menu_item:last-child {
     border-right:none;
     padding-right: 0;
+} */
+
+
+.menu .menu_divider {
+    border-right: 2px dotted black;
 }
+
+
 
 .subheader {
     position: absolute;
@@ -105,7 +112,7 @@ nav {
 }
 
 .promo {
-    height: 800px;
+    min-height: 800px;
     padding: 143px 0 186px 0;
     background:url("../img/bg/uber_bg.png") center center/cover no-repeat;
 }

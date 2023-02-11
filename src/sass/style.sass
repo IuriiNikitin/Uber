@@ -3,13 +3,20 @@ $blue_color_2: #1CA8C3
 $blue_color_3: #1FBAD6
 $red_color: #FF5656
 	
-	
-	
-	
-	
-	
 * 
 	font-family: 'Roboto', sans-serif
+
+.label 
+	margin: 0 auto 
+	width: 115px 
+	height: 27px 
+	background: #000000 
+	font-weight: 400 
+	font-size: 11px 
+	text-align: center 
+	line-height: 27px 
+	text-transform: uppercase 
+	color: #FFFFFF 
 
 .title
 	margin: 0 
@@ -26,19 +33,16 @@ $red_color: #FF5656
 	font-size: 17px
 	text-align: center
 
+.label_white
+	background: #fff
+	color: #000
 
-.label 
-	margin: 0 auto 
-	width: 115px 
-	height: 27px 
-	background: #000000 
-	font-weight: 400 
-	font-size: 11px 
-	text-align: center 
-	line-height: 27px 
-	text-transform: uppercase 
-	color: #FFFFFF 
+.title_white, .subtitle_white
+	color:#fff
 
+.label_min
+	width: 79px
+	height: 27px
 
 header
 	position: relative
@@ -269,11 +273,6 @@ nav
 	.container
 		z-index: 2
 		position: relative
-	.label_white
-		background: #fff
-		color: #000
-	.title_white, .subtitle_white
-		color:#fff
 	&_img
 		display: block
 		margin: 0 auto
@@ -327,3 +326,63 @@ nav
 		.require_list
 			li:before
 				background: url("../img/icons/check/check_red.svg")
+
+.world
+	height: 720px
+	padding: 46px 0 50px 0
+	background: url("../img/bg/world_bg.png") center center/cover no-repeat
+	.container
+		height: 100%
+		position: relative
+	&_link
+		position: absolute
+		bottom: 0
+		left: 50%
+		transform: translateX(-50%)
+		display: block
+		margin: 0 auto
+		color: $blue_color_3
+		font-weight: 400
+		font-size: 15px
+		text-align: center
+		text-transform: uppercase
+		text-decoration: none
+
+footer
+	height: 155px
+	padding: 13px 20px 40px 20px
+	.footer
+		&_divider
+			width: 300px
+			height: 4px
+			margin: 0 auto
+			background-color: $blue_color_3
+		&_wrapper
+			margin-top: 34px
+			display: flex
+			justify-content: space-between
+			>div
+				width: 33%
+				&:nth-child(3)
+					display: flex
+					justify-content: flex-end
+		&_social
+			display: flex
+			justify-content: space-between
+			width: 156px
+			height: 35px
+			&_item
+				display: block
+				width: 35px
+				height: 35px
+				border-radius: 50%
+				background-color: #000
+		&_store
+			display: flex
+			justify-content: space-between
+			width: 296px
+			height: 27px
+			&_item
+				display: block
+
+

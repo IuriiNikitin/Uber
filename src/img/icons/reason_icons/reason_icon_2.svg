@@ -1,0 +1,21 @@
+<svg width="54px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53 61">
+<style>
+.stroke {
+	fill:none;
+	stroke:#FFF;
+	stroke-width:2.2;
+	stroke-miterlimit:10;
+}
+.round {
+	stroke-linecap:round;
+	stroke-linejoin:round;
+}
+</style>
+<path class="stroke" d="M51,46H2c-0.6,0-1-0.5-1-1V2c0-0.6,0.5-1,1-1h49c0.6,0,1,0.5,1,1v43C52,45.5,51.5,46,51,46z"/>
+<line class="stroke" x1="1.2" y1="5.3" x2="52" y2="5.3"/>
+<line class="stroke round" x1="26.5" y1="46.2" x2="26.5" y2="60"/>
+<line class="stroke round" x1="37.3" y1="46.5" x2="45.7" y2="60"/>
+<line class="stroke round" x1="16.7" y1="46.5" x2="8.3" y2="60"/>
+<path class="stroke round" d="M37.2,23.9l-11.4,2.9L29,15.4c-1.1-0.3-2.2-0.5-3.5-0.5c-6.6,0-11.9,5.3-11.9,11.9c0,6.6,5.3,11.9,11.9,11.9c6.6,0,11.9-5.3,11.9-11.9C37.5,25.8,37.4,24.8,37.2,23.9z"/>
+<path class="stroke round" d="M41.9,19c-0.9-3.6-3.6-6.4-7.1-7.4l-2.9,9.9L41.9,19z"/>
+</svg>

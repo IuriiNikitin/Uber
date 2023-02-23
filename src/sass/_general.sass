@@ -54,14 +54,18 @@ nav
 	margin: 0 
 	padding: 14px 68px 
 	list-style-type: none 
+	&_item
+		padding-right: 50px
+		border-right: 2px dotted black
+		&:last-child
+			padding-right: 0
+			border-right: none
 	&_link 
 		font-style: normal 
 		font-weight: 300 
 		font-size: 15px 
 		color: #FFFFFF 
 		text-decoration: none 
-	&_divider 
-		border-right: 2px dotted black 
 
 .subheader 
 	position: absolute 
@@ -182,7 +186,7 @@ nav
 	background: url("../img/bg/mobile_bg.svg") center center/cover no-repeat
 	.row
 		margin-top: 32px
-		justify-content: space-between
+		justify-content: center
 	&_item
 		position: relative
 		width: 320px
@@ -394,7 +398,7 @@ footer
 		&_store
 			display: flex
 			justify-content: space-between
-			width: 296px
-			height: 27px
 			&_item
+				margin: 3px
+				height: min-content
 				display: block

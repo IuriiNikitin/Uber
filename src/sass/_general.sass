@@ -116,7 +116,6 @@ nav
 			text-decoration: underline 
 
 .promo 
-	min-height: 800px 
 	padding: 143px 0 186px 0 
 	background: url("../img/bg/uber_bg.png") center center/cover no-repeat 
 	&_header 
@@ -163,7 +162,7 @@ nav
 		display: flex 
 		justify-content: center 
 		align-items: center 
-		min-width: 113px 
+		width: 113px 
 		height: 113px 
 		background: $main_color
 		border-radius: 50% 
@@ -181,7 +180,6 @@ nav
 		color: $main_color
 
 .mobile
-	min-height:864px 
 	padding: 46px 0 60px 0
 	background: url("../img/bg/mobile_bg.svg") center center/cover no-repeat
 	.row
@@ -346,20 +344,23 @@ footer
 			justify-content: space-between
 			>div
 				width: 33%
+				&:nth-child(1)
+					display: flex
+					justify-content: flex-start
+				&:nth-child(2)
+					min-width: 400px
 				&:nth-child(3)
 					display: flex
 					justify-content: flex-end
 		&_social
 			display: flex
-			justify-content: space-between
-			width: 156px
-			height: 35px
 			&_item
 				display: flex
 				justify-content: center
 				align-items: center
 				width: 35px
 				height: 35px
+				margin: 4px
 				border-radius: 50%
 				background-color: #000
 				svg
@@ -397,7 +398,6 @@ footer
 				text-decoration: none
 		&_store
 			display: flex
-			justify-content: space-between
 			&_item
 				margin: 3px
 				height: min-content

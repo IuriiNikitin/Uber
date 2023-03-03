@@ -46,7 +46,10 @@ nav
 	top: 0 
 	z-index: 10
 	height: 52px 
-	background: #212121 
+	background: #212121
+
+.hamburger
+	display: none
 
 .menu 
 	display: flex 
@@ -257,6 +260,7 @@ nav
 		display: block
 		margin: 0 auto
 		margin-top: 54px
+		width: 80vw
 		max-width: 760px
 	&_descr
 		font-weight: 300
@@ -332,71 +336,73 @@ nav
 footer
 	min-height: 155px
 	padding: 13px 20px 40px 20px
-	.footer
-		&_divider
-			width: 300px
-			height: 4px
-			margin: 0 auto
-			background-color: $main_color
-		&_wrapper
-			margin-top: 34px
+
+.footer
+	&_divider
+		width: 80vw
+		max-width: 300px
+		height: 4px
+		margin: 0 auto
+		background-color: $main_color
+	&_wrapper
+		margin-top: 34px
+		display: flex
+		justify-content: space-between
+		>div
+			width: 33%
+			&:nth-child(1)
+				display: flex
+				justify-content: flex-start
+			&:nth-child(2)
+				width: 390px
+			&:nth-child(3)
+				display: flex
+				justify-content: flex-end
+	&_social
+		display: flex
+		&_item
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 35px
+			height: 35px
+			margin: 4px
+			border-radius: 50%
+			background-color: #000
+
+	&_links
+		&_main
+			display: flex
+			justify-content: space-around
+			font-weight: 300
+			font-size: 15px
+			text-transform: uppercase
+			a
+				text-decoration: none
+				color: #070716
+		&_sub
+			margin-top: 8px
 			display: flex
 			justify-content: space-between
-			>div
-				width: 33%
-				&:nth-child(1)
-					display: flex
-					justify-content: flex-start
-				&:nth-child(2)
-					min-width: 400px
-				&:nth-child(3)
-					display: flex
-					justify-content: flex-end
-		&_social
-			display: flex
-			&_item
-				display: flex
-				justify-content: center
-				align-items: center
-				width: 35px
-				height: 35px
-				margin: 4px
-				border-radius: 50%
-				background-color: #000
-
-		&_links
-			&_main
-				display: flex
-				justify-content: space-around
-				font-weight: 300
-				font-size: 15px
-				text-transform: uppercase
-				a
-					text-decoration: none
-					color: #070716
-			&_sub
-				margin-top: 8px
-				display: flex
-				justify-content: space-between
-				font-weight: 300
-				font-size: 11px
-				text-transform: uppercase
-				a
-					text-decoration: none
-					color: #999999
-			&_lang
-				display: block
-				margin: 0 auto
-				margin-top: 10px
-				text-align: center
-				color: $main_color
-				font-weight: 400
-				font-size: 11px
-				text-transform: uppercase
+			font-weight: 300
+			font-size: 11px
+			text-transform: uppercase
+			a
 				text-decoration: none
-		&_store
-			display: flex
-			&_item
-				margin: 3px
-				height: min-content
-				display: block
+				color: #999999
+		&_lang
+			display: block
+			margin: 0 auto
+			margin-top: 10px
+			text-align: center
+			color: $main_color
+			font-weight: 400
+			font-size: 11px
+			text-transform: uppercase
+			text-decoration: none
+	&_store
+		display: flex
+		&_item
+			margin: 3px
+			height: min-content
+			display: block

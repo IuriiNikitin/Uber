@@ -135,6 +135,8 @@
 			width: inherit
 			text-align: center
 			margin: 10px 0
+			&:hover
+				text-decoration: none
 
 	.hamburger
 		display: block
@@ -175,11 +177,15 @@
 		&_phone
 			text-align: center
 			margin-top: 16px
+			&:hover
+				text-decoration: none
 		&_btn
 			margin: 0 auto
 			margin-top: 10px
 			width: 140px
 			height: 28px
+			&:hover
+				background: $btn_bg
 
 	.promo
 		padding-bottom: 82px
@@ -192,6 +198,8 @@
 			width: 210px
 			height: 50px
 			font-size: 16px
+			&:hover
+				background: $btn_bg
 
 	.title
 		font-size: 27px
@@ -199,6 +207,32 @@
 	.reasons
 		&_descr
 			width: 100%
+
+	.world
+		&_link
+			&:hover
+				text-decoration: none
+	.footer
+		&_social
+			&_item
+				&:hover
+					transform: scale(1)
+		&_links
+			&_main
+				a
+					&:hover
+						text-decoration: none
+			&_sub
+				a
+					&:hover
+						text-decoration: none
+			&_lang
+				&:hover
+					text-decoration: none
+		&_store
+			&_item
+				&:hover
+					transform: scale(1)
 
 @media (max-width: 575.98px)
 	.menu

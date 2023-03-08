@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Uber</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/style.min.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon/favicon-16x16.png">
+    <link rel="manifest" href="uber.webmanifest">
+    <link rel="mask-icon" href="img/icons/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#33303d">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
     <header>
@@ -18,17 +26,17 @@
             <div class="container">
                 <ul class="menu">
                     <li class="menu_item"><a href="#" class="menu_link">Главная</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">Со своим автомобилем</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">На автомобиле компании</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">Требования</a></li>
+                    <li class="menu_item"><a href="#with_my_car" class="menu_link">Со своим автомобилем</a></li>
+                    <li class="menu_item"><a href="#with_company_car" class="menu_link">На автомобиле компании</a></li>
+                    <li class="menu_item"><a href="#requirements" class="menu_link">Требования</a></li>
                     <li class="menu_item"><a href="#" class="menu_link">Контакты</a></li>
                     <li class="menu_item"><a href="#" class="menu_link">Оставить заявку</a></li>
                 </ul>
             </div>
             <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span class="hamburger_line"></span>
+                <span class="hamburger_line"></span>
+                <span class="hamburger_line"></span>
             </div>
         </nav>
         <div class="subheader">
@@ -194,7 +202,7 @@
             <div class="row">
                 <div class="col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5 offset-xl-1">
                     <div class="require_block">
-                        <div class="require_title">УСЛОВИЯ: со своим авто:</div>
+                        <div id="with_my_car" class="require_title">УСЛОВИЯ: со своим авто:</div>
                         <ul class="require_list">
                             <li>Подключаем к системе UBER под 10%.</li>
                             <li>Ни каких взносов  0%!</li>
@@ -209,7 +217,7 @@
                 </div>
                 <div class="col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5 offset-xl-1">
                     <div class="require_block">
-                        <div class="require_title">УСЛОВИЯ: на авто компании:</div>
+                        <div id="with_company_car" class="require_title">УСЛОВИЯ: на авто компании:</div>
                         <ul class="require_list">
                             <li>Предоставляем авто без залога</li>
                             <li>Без ежедневных выплат по аренде</li>
@@ -219,7 +227,7 @@
                 </div>
                 <div class="col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5 offset-xl-1">
                     <div class="require_block warning">
-                        <div class="require_title">ТРЕБОВАНИЕ:</div>
+                        <div id="requirements" class="require_title">ТРЕБОВАНИЯ:</div>
                         <ul class="require_list">
                             <li>Наличие автомобиля без рекламы</li>
                             <li>Автомобиль не должен быть желтый и не с желтыми номерами</li>

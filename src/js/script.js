@@ -14,4 +14,16 @@ window.addEventListener('DOMContentLoaded', () => {
             menu.classList.toggle('menu_active');
         })
     })
+    document.addEventListener("click", (e) => {
+      if (
+        !e.target.classList.contains("menu") &&
+        !e.target.classList.contains("hamburger") &&
+        !e.target.classList.contains("hamburger_line") &&
+        menu.classList.contains("menu_active") &&
+        hamburger.classList.contains("hamburger_active")
+      ) {
+        hamburger.classList.toggle("hamburger_active");
+        menu.classList.toggle("menu_active");
+      }
+    });
 })
